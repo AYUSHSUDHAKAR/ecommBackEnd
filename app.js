@@ -43,12 +43,7 @@ const corsOptions = {
 //Middleware
 app.use(bodyParser.json());
 app.use(cookieParser());
-app.use(
-  cors({
-    withCredentials: false,
-    origin: "https://git.heroku.com/ecommercerjbe.git",
-  })
-);
+app.use(cors({ withCredentials: false, origin: "http://localhost:3001" }));
 
 //Routes
 
