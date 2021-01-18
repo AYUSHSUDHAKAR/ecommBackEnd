@@ -21,6 +21,10 @@ const paymentRoutes = require("./routes/stripe");
 //DB connection
 mongoose
   .connect(process.env.DATABASE, {
+    auth: {
+      user: "ayushsudhakar",
+      password: "@1998Ayu?!",
+    },
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useCreateIndex: true,
