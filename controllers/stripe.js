@@ -41,8 +41,8 @@ exports.stripePayment = async (req, res) => {
       },
     ],
     mode: "payment",
-    success_url: "http://localhost:3000",
-    cancel_url: "https://localhost:3000/home",
+    success_url: "https://ayushsudhakar.github.io/ecomm",
+    cancel_url: "https://ayushsudhakar.github.io/ecomm",
   });
 
   // // });
