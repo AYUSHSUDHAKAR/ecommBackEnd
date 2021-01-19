@@ -47,7 +47,7 @@ const corsOptions = {
 //Middleware
 app.use(bodyParser.json());
 app.use(cookieParser());
-app.use(cors({ withCredentials: false, origin: "http://localhost:3001" }));
+app.use(cors());
 
 //Routes
 
