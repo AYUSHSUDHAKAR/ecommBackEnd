@@ -22,8 +22,8 @@ const paymentRoutes = require("./routes/stripe");
 mongoose
   .connect(process.env.DATABASE, {
     auth: {
-      user: "ayushsudhakar",
-      password: "@1998Ayu?!",
+      user: `${process.env.DB_USER}`,
+      password: `${process.env.DB_PASS}`,
     },
     useUnifiedTopology: true,
     useNewUrlParser: true,
@@ -50,7 +50,6 @@ app.use(cookieParser());
 app.use(cors());
 
 //Routes
-
 app.use("/api", authRoutes);
 app.use("/api", userRoutes);
 app.use("/api", categoryRoutes);
